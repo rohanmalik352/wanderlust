@@ -1,0 +1,134 @@
+/* Body background */
+body {
+    background-color: pink;
+    font-family: "Plus Jakarta Sans", sans-serif!important;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+
+}
+.container{
+    flex:1;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+}
+
+/* Campus icon */
+.fa-solid  {
+    color: #fe424d !important;
+    font-size: 2rem;
+}
+
+/* Links */
+.new_link {
+    color: #222222 !important;
+}
+
+.f-info-links {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+/* Social icons */
+.f-info-socials i {
+
+   
+    /* margin-right: 3rem; */
+    font-size: 2rem;
+}
+
+/* Footer sections */
+/* Footer container */
+.f-info {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    /* Reduced padding for a smaller footer */
+    padding: 0.5rem 0;
+    /* Removed fixed height to let content determine size */
+}
+
+/* Footer sections */
+.f-info-socials,
+.f-info-links,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Reduced gap between items */
+    gap: 2rem;
+    /* Reduced top padding */
+    padding-top: 0.5rem;
+}
+.f-info-socials {
+    display: flex;
+    gap:20px;
+    
+}
+.listing-card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+.card-image-top{
+    border-radius: 1rem !important;
+    width:100% !important;
+    object-fit: cover !important ;
+
+}
+.card-body{
+    padding:0 !important;
+}
+.card-text p{
+    font-weight: 400;
+}
+.listing-link{
+  text-decoration: none;
+
+}
+.card-img-overlay{
+    opacity:0;
+}
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color: white;
+    
+}
+/*new page*/
+.add-btn{
+    background-color:#fe424d !important ;
+    border: none;
+
+
+}
+/*edit page*/
+
+
+
+.edit-btn{
+     background-color:#fe424d !important ;
+    border: none;
+
+}
+.show-img{
+    height:30vh;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+#map{
+    height: 400px;
+    width:80vh;
+}

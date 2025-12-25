@@ -1,0 +1,76 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h3>CREATE A NEW LISTING</h3>
+                <form  id="listing-form" method="POST" action="/listing" novalidate class="needs-validation" enctype="multipart/form-data">
+
+                    <div class="mb-3">
+                        <label for="title" class="form-label">TITLE</label>
+                        <input name="listing[title]" placeholder="Enter title" type="text" class="form-control"
+                            required>
+                        <div class="valid-feedback">Title looks good</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">DESCRIPTION</label>
+                        <textarea name="listing[description]" placeholder="Enter description" class="form-control"
+                            required></textarea>
+                        <div class="invalid-feedback">Please enter a description</div>
+                    </div>
+                    <!--                 
+               <div class="mb-3">
+    <label for="image" class="form-label">IMAGE LINK</label>
+    <input 
+        name="listing[image][url]" 
+      
+        placeholder="Enter image URL" 
+        class="form-control" 
+        required>
+    <div class="invalid-feedback">Please enter a valid image URL</div>
+    
+</div> -->
+                    <div class="mb-3">
+                        <label for="image" class="form-label">upload Listing Image</label>
+                        <input name="listing[image]" type="file" placeholder="Enter image URL" class="form-control"
+                            required>
+                        <div class="invalid-feedback">Please enter a valid image URL</div>
+
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="location" class="form-label">LOCATION</label>
+                        <input id="location" name="listing[location]" placeholder="Location" type="text" class="form-control"
+                            required>
+                        <div class="invalid-feedback">Please enter a valid location</div>
+                    </div>
+                    <input type="hidden" id="lat" name="lat">
+                    <input type="hidden" id="lng" name="lng">
+
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="price" class="form-label">Price</label>
+                            <input name="listing[price]" placeholder="200" type="number" class="form-control" required>
+                            <div class="invalid-feedback">Please enter a valid price</div>
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label  for="country" class="form-label">COUNTRY</label>
+                            <input id="country" name="listing[country]" placeholder="INDIA" type="text" class="form-control"
+                                required>
+                            <div class="invalid-feedback">Please enter a valid country name</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-dark add btn mt-3">ADD</button>
+                </form>
+            </div>
+        </div>
+       
+     <script src="/map.js"></script>
+       
+        <script src="/listingform.js"></script>
+
+
+    </body>
