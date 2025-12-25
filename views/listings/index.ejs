@@ -35,6 +35,37 @@
 .tax-info{
   display: none;
 }
+/* Show only first 2 filters on xs screens */
+@media (max-width: 576px) {
+  .filter {
+    display: none;
+  }
+  .filter:nth-child(1),
+  .filter:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Show more filters on sm+ screens */
+@media (min-width: 577px) and (max-width: 767px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Keep default layout for md+ screens */
+@media (min-width: 768px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .tax-toggle{
   border: 1px solid black;
   border-radius: 1rem;
