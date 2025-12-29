@@ -52,24 +52,31 @@ git clone https://github.com/your-username/wanderlust.git
 2️⃣ Navigate to the project directory
 cd wanderlust
 
-3️⃣ Install dependencies
+___
+
+### 3️⃣ Install dependencies
 npm install
 
-4️⃣ Create a .env file in the root directory and add:
+___
+
+### Create a .env file in the root directory and add:
 CLOUD_NAME=your_cloudinary_cloud_name
 API_KEY=your_cloudinary_api_key
 API_SECRET=your_cloudinary_api_secret
 ATLASDB_URL=your_mongodb_connection_string
 SECRET=your_session_secret
 
-5️⃣ Run the application
-nodemon app.js
+___
 
-6️⃣ Open in browser
+### 5️⃣ Run the application
+nodemon app.js
+___
+
+### 6️⃣ Open in browser
 http://localhost:3000
 
 
----
+___
 
 ## 📚 What I Learned
 - Full-stack application architecture  
@@ -79,23 +86,21 @@ http://localhost:3000
 - Error handling and validations  
 -  Deploying a full-stack application
 
----
+___
 
 
 ## 🔮 Future Improvements
-- Booking and reservation system  
-- Advanced search and filter functionality  
-- Reviews and ratings system  
-- Improved UI/UX  
+- Booking and reservation system
+- Advanced search and filter functionality
+- Reviews and ratings system
+- Improved UI/UX
 - Payment gateway integration
-
----
-
 
 ## 📄 License
 This project is licensed under the MIT License.
 
----
-
 ## 🙌 Acknowledgements
 Inspired by Airbnb and built for learning full-stack web development.
+
+
+
