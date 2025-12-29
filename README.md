@@ -5,7 +5,7 @@ Wanderlust is a **full-stack web application inspired by Airbnb**, built as my *
 The goal of this project was to understand how real-world web applications work from frontend to backend.
 
 ## 🚀 Live Demo
-🔗 https://wanderlust-pfpk.onrender.com/airbnb
+🔗 https://wanderlust-pfpk.onrender.com/
 
 ---
 
