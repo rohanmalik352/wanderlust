@@ -88,18 +88,16 @@ app.use("/listing", listing);
 app.use("/listing/:id/reviews", review);
 app.use("/", userrouter);
 
-// Fallback route - should be the last route
+
 app.use((req, res, next) => {
     next(new ExpressError(404, "Page Not Found!"));
 });
 
-// Error handling middleware
 app.use((err, req, res, next) => {
     const { statuscode = 500, message = "Something went wrong" } = err;
     res.status(statuscode).render("error.ejs", { message });
 });
 
-// Start the server
 app.listen(3000, () => {
     console.log("App is listening on port 3000");
 });

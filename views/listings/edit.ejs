@@ -5,14 +5,13 @@
             <h3>EDIT THIS LISTING</h3>
             <form method="POST" action="/listing/<%=listing._id%>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
 
-                <!-- Title -->
+           
                 <div class="mb-3">
                     <label for="title" class="form-label">TITLE</label>
                     <input name="listing[title]" value="<%=listing.title%>" type="text" class="form-control" required>
                     <div class="valid-feedback">Title looks good</div>
                 </div>
 
-                <!-- Description -->
                 <div class="mb-3">
                     <label for="description" class="form-label">DESCRIPTION</label>
                     <textarea name="listing[description]" class="form-control" required><%=listing.description%></textarea>
@@ -25,7 +24,6 @@
 
                 </div>
 
-                <!-- Image -->
                 <div class="mb-3">
                     <label for="image" class="form-label">UPLOAD NEW IMAGE</label>
                     <input name="listing[image]"  class="form-control" type="file"
@@ -33,14 +31,13 @@
                     <div class="invalid-feedback"></div>
                 </div>
 
-                <!-- Location -->
+              
                 <div class="mb-3">
                     <label for="location" class="form-label">LOCATION</label>
                     <input name="listing[location]" value="<%=listing.location%>" type="text" class="form-control" required>
                     <div class="invalid-feedback">Please enter a valid location</div>
                 </div>
 
-                <!-- Price and Country -->
                 <div class="row">
                     <div class="mb-3 col-md-4">
                         <label for="price" class="form-label">Price</label>

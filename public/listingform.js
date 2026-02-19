@@ -1,4 +1,4 @@
-// listingform.js
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("listing-form");
   const locationInput = document.getElementById("location");
@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const latInput = document.getElementById("lat");
   const lngInput = document.getElementById("lng");
 
-  // Stop execution if required elements are missing
   if (!form || !locationInput || !countryInput || !latInput || !lngInput) {
     return;
   }
@@ -34,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Safe submission
       form.submit();
     } catch (err) {
       alert("Location conversion failed. Please enter a valid place.");

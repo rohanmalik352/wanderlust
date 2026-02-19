@@ -1,7 +1,7 @@
 class ExpressError extends Error {
-    constructor(statusCode, message) {  // Change parameter to camelCase
+    constructor(statusCode, message) { 
         super();
-        this.statusCode = statusCode;   // Change property to camelCase
+        this.statusCode = statusCode;  
         this.message = message;
     }
 }

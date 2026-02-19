@@ -14,7 +14,7 @@
       />
 
       <div class="card-body">
-        <!-- OWNER -->
+       
         <p class="card-text">
           Owned by <i>
             <%= listing.owner?.username || "Unknown User" %>
@@ -32,14 +32,13 @@
             : "N/A" %>
         </p>
 
-        <!-- LOCATION -->
+   
         <p class="card-text"><%= listing.location %></p>
         <p class="card-text"><%= listing.country %></p>
       </div>
     </div>
   </div>
 
-  <!-- EDIT / DELETE -->
   <% if (curruser && listing.owner && curruser._id.equals(listing.owner._id)) { %>
    <div class="btns d-flex mt-3 gap-5 justify-content-start">
 
@@ -55,7 +54,6 @@
     </div>
   <% } %>
 
-  <!-- REVIEWS -->
   <div class="col-8 offset-3 mt-4">
     <hr />
 

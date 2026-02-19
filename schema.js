@@ -8,7 +8,7 @@ const listingSchema = Joi.object({
     country: Joi.string().required(),
     price: Joi.number().min(0).required(),
 
-    // ✅ image handled by Multer, NOT Joi
+ 
     image: Joi.any().optional()
   }).required()
 });
